@@ -1,7 +1,9 @@
 /* Reset và Cấu hình cơ bản */
 :root {
-  --primary-color: #ff4d4d; /* Đỏ nhạt chủ đạo */
-  --primary-light: #ffebee; /* Nền đỏ nhạt */
+  --primary-color: #ff4d4d;
+  /* Đỏ nhạt chủ đạo */
+  --primary-light: #ffebee;
+  /* Nền đỏ nhạt */
   --primary-dark: #cc0000;
   --white: #ffffff;
   --text-main: #333333;
@@ -19,7 +21,8 @@
 }
 
 html {
-  scroll-behavior: smooth; /* Cuộn mượt khi click menu */
+  scroll-behavior: smooth;
+  /* Cuộn mượt khi click menu */
 }
 
 body {
@@ -30,7 +33,10 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: 700;
   color: var(--text-main);
 }
@@ -60,7 +66,7 @@ header {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(5px);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   z-index: 100;
 }
 
@@ -105,7 +111,8 @@ header {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 5rem 2rem 2rem; /* padding top lớn để tránh header chèn */
+  padding: 5rem 2rem 2rem;
+  /* padding top lớn để tránh header chèn */
 }
 
 section {
@@ -128,7 +135,7 @@ section {
   font-size: 4rem;
   margin-bottom: 1rem;
   color: var(--white);
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .banner-content p {
@@ -165,7 +172,7 @@ section {
 /* Cards Style */
 .card {
   background: var(--white);
-  border-radius: 16px;
+  border-radius: 40px;
   overflow: hidden;
   box-shadow: var(--shadow);
   transition: var(--transition);
@@ -188,7 +195,8 @@ section {
 }
 
 .card:hover .card-img {
-  transform: scale(1.05); /* Hiệu ứng zoom nhẹ hình ảnh khi hover */
+  transform: scale(1.05);
+  /* Hiệu ứng zoom nhẹ hình ảnh khi hover */
 }
 
 .card-content {
@@ -236,8 +244,8 @@ section {
 /* Ẩm thực section riêng biệt tạo điểm nhấn */
 #am-thuc {
   background-color: var(--primary-light);
-  border-radius: 30px;
-  padding: 4rem 2rem;
+  border-radius: 40px;
+  padding: 10rem 5rem;
   margin: 4rem 0;
 }
 
@@ -265,7 +273,7 @@ section {
 }
 
 /* Ngăn cuộn trang khi mở modal */
-.modal:target ~ body {
+.modal:target~body {
   overflow: hidden;
 }
 
@@ -278,7 +286,7 @@ section {
   position: relative;
   transform: translateY(-50px) scale(0.9);
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .modal:target .modal-content {
@@ -347,7 +355,7 @@ footer {
 .footer-bottom {
   margin-top: 2rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(255,255,255,0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 0.9rem;
   color: #ffcccc;
 }
@@ -407,11 +415,11 @@ footer {
     gap: 1rem;
     font-size: 0.9rem;
   }
-  
+
   .banner-content h1 {
     font-size: 2.5rem;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
